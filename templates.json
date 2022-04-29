@@ -1,0 +1,60 @@
+{
+    "options": {
+        "quickaccess": {
+            "enabled": true
+        },
+        "autofill": {
+            "enabled": true
+        },
+        "contextmenu": {
+            "enabled": true
+        },
+        "keeptext": {
+            "enabled": true,
+            "separator": "----------------------------"
+        },
+        "validDomains": "jira,trello,atlassian.net"
+    },
+    "templates": [
+        {
+            "ticketDesc": "Hi [~Developer@email.com] ticket was verified on *environment_name*.\n Please raise PR to release branch and reassign to *Nicolo Chieffo* / *Sergiy Shumyk* for merge & deploy to QA2/Sandbox2.\n||Verification status||Environment||Brand||Locale||\n| | | | |\n\n*QA artifacts:*\n Documentation is present:\n * [UI Components and editorial curation|https://digital.vfc.com/wiki/display/ECOM15/05.+UI+Components+and+editorial+curation]\n * \"[Components x Pages table|https://docs.google.com/spreadsheets/d/1bAEomt7uaV-oHQLl9UprbkFQFJLKvgw9eu_OO31RWTo/edit#gid=860677486]\" is up to date\n * Story details added to \"[Release notes|https://digital.vfc.com/wiki/display/ECOM15/CMS+-+Releases]\"\n\n*Scope of verification:*\n * CMS Configs & API part\n ** Feature configs at the CMS\n ** API response\n * FE part\n ** CMS part is reflected on FE (according to possible configuration variations, if any)\n ** Desktop\n ** Tablet\n ** Mobile\n ** UI Design\n\n*Attachments:*\n * *Response examples:*\n ** [|^exampple_response.json]\n ** [|^exampple_response.json]\n{code:java|title=Response.json}\n // Your code here\n{code}\n\n * *Screenshots:*\n !example.png|thumbnail! !example_2.png|thumbnail!",
+            "templateName": "CMS Tempalte",
+            "issueType": "Story",
+            "projects": "default",
+            "quickAccessDropdown": true,
+            "quickAccessButton": false,
+            "quickAccessCommentButton": false,
+            "quickAccessContextMenu": true
+        },
+        {
+            "ticketDesc": "||Verification status||Environment||Brand||Locale||\n| | | | |\n*Scope of verification:*\n* Check that the UI is matched with the designs\n** Desktop\n** Tablet\n** Mobile\n* Check that the functionality is implemented in accordance to the requirements\n\n*Attachments:*\n* Screenshots:\n!example.png|thumbnail! !example_2.png|thumbnail!",
+            "templateName": "FE Template",
+            "issueType": "Bug",
+            "projects": "default",
+            "quickAccessDropdown": true,
+            "quickAccessButton": false,
+            "quickAccessCommentButton": false,
+            "quickAccessContextMenu": true
+        },
+        {
+            "ticketDesc": "*Precondition:*\n* precondition\n\n*Steps to reproduce:*\n# step_one\n# step_two\n# step_three\n\n*{color:#de350b}Actual result:{color}*\n* actual_result\n\n!your_screenshot.png|thumbnail!\n{code:java|title=Response.json}\n // Your code here\n{code}\n\n{color:#00875a}*Expected result:*{color}\n* expected_result",
+            "templateName": "Bug Template",
+            "issueType": "",
+            "projects": "default",
+            "quickAccessDropdown": true,
+            "quickAccessButton": false,
+            "quickAccessCommentButton": false,
+            "quickAccessContextMenu": true
+        },
+        {
+            "ticketDesc": "||Verification Status||Environment||Brand||Locale||\n| | | | |\n*Test URL:*\n*Verification summary:*\n* Your_summary_here\n\n*Attachments:*\n!example.png|thumbnail!",
+            "templateName": "Bug Verification",
+            "issueType": "",
+            "projects": "default",
+            "quickAccessDropdown": true,
+            "quickAccessButton": false,
+            "quickAccessCommentButton": false,
+            "quickAccessContextMenu": true
+        }
+    ]
+}
